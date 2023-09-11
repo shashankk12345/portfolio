@@ -1,0 +1,349 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,500;1,6..96,600&family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@400;500;600&family=Fredericka+the+Great&family=Great+Vibes&family=Josefin+Sans:wght@300;500&family=Poppins:wght@300;400;500&display=swap');
+
+
+img{
+	width: 100%;
+	vertical-align: top;
+}
+
+.logo a img{
+	height: 84px;
+    padding-left: 120px;
+}
+
+nav{
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	border-bottom: 0.5px gray solid;
+	transition: 0.5s;
+}
+
+nav:hover{
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.over{
+	max-width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.container{
+	max-width: 100%;
+	height:750px;
+	background:url(../images/2.webp) no-repeat center, orange;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container  h5{
+	font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	font-weight: normal;
+	color:#ffb366;
+	text-align: center;
+	margin-top: 100px;
+	position: relative;
+    top: 53px;
+}
+
+.container p{
+	font-family: 'poppins',sans-serif;
+	color: white;
+	font-size: 1.5vw;
+	text-align: center;
+	margin-top: 211px;
+}
+
+.container h1{
+	color: white;
+	font-size: 5.5vw;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 70px;
+	font-weight: 200;
+	margin-top: 20px;
+	position: relative;
+    top: 57px;
+}
+
+.menu > ul{
+	list-style: none;
+	padding:0;
+	display: flex;
+	/* background:; */
+}
+
+
+.menu{
+    margin-right: 190px;
+}
+
+.menu > ul > li > a{
+	text-decoration: none;
+	margin: 25px;
+	font-family: Poppins;
+	font-weight: 300;
+	font-size:14px;
+	letter-spacing: 2px;
+	color: white;
+	/* position: relative; */
+}
+
+.menu > ul > li > a >i{
+	margin-left: 10px;
+}
+
+
+.menu > ul > li > a:hover{
+	text-decoration: underline;
+}
+
+.submenu{
+	display: none;
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 80%;
+	padding:15px;
+	width:150px;
+	list-style: none;
+}
+
+
+
+.submenu > li >a:hover{
+	background:linear-gradient(rgba(0, 0, 0, 1.0),rgba(146, 150, 156, 1.0));
+	transform: scale(1.1);
+}
+
+.submenu li a{
+	text-decoration: none;
+	font-family: Poppins;
+	font-weight: 500;
+	font-size:14px;
+	color: white;
+	line-height: 25px;
+	display: block;
+	margin: 10px 0;
+}
+
+/*MEDIA QUERY*/
+
+@media(max-width: 1190px){
+	.logo a img{
+    padding-left: 80px;
+}
+
+.menu > ul > li > a{
+	text-decoration: none;
+	margin: 15px;
+	font-family: Poppins;
+	font-weight: 300;
+	font-size:15px;
+	color: white;
+}
+
+.menu{
+    margin-right: 160px;
+	display: block;
+}
+	
+}
+
+@media(max-width: 991px){
+	.menu{
+		display: none;
+	}
+
+	nav .bar{
+		display: block;
+	}
+
+	.menu > ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    height: 500px;
+    width: 150px;
+}
+
+.menu > ul > li{
+	margin: 20px 0;
+}
+
+.menu .submenu{
+	z-index: 99;
+	top: 362px;
+	width: 126px;
+	border: 2px solid white;
+}
+}
+
+@media(max-width: 766px){
+	.foto{
+		max-width: 100%;
+	}
+
+	.over-order > .oo{
+		display: block;
+		width: 100%;
+	}
+}
+
+@media(max-width: 480px){
+	nav .bar{
+		font-size: 15px;
+		margin-right: 50px;
+
+	}
+
+	.logo a img{
+		height: 70px;
+		padding-left: 80px;
+	}
+}
+
+/*MEDIA QUERY*/
+
+.bar{
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	margin-right: 94px;
+	font-family: sans-serif;
+	display: none;
+}
+
+.second{
+	max-width: 100%;
+	height: 50vh;
+	background:black url(../images/bg.jpg) no-repeat;
+	position: relative;
+}
+
+.foto{
+	max-width: 50%;
+	height: 100%;
+	background: pink url(../images/foto.webp) no-repeat center;
+	background-size: cover;
+}
+
+.discover{
+	background-color: rgb(0, 0, 0,0.5);
+	position: absolute;
+	left: 40%;
+    bottom:30%;
+	max-width: 605px;
+}
+
+.discover > h2{
+	font-family: 'Great Vibes', cursive;
+	font-weight: normal;
+	font-size: 50px;
+	color: #b8925d;
+	padding:0 40px;
+	padding-top: 20px;
+
+}
+
+.discover > h1{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	color: white;
+	padding:0 30px;
+	margin-left: 12px;
+	margin-top: -20px;
+}
+
+.discover > p{
+	font-family: sans-serif;
+	color: grey;
+	font-size: 15px;
+	line-height: 25px;
+	padding: 30px;
+}
+
+.hello{
+	max-width: 100%;
+	height: 650px;
+	background: url(../images/1.webp) center;
+	background-size: cover;
+}
+
+.order{
+	background: rgba(0, 0, 0, 0.6);
+	max-width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.over-order{
+	background:rgba(225, 192, 147,0.7);
+	max-width: 90%;
+	height: 90%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.oo h2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+	margin: 10px 0;
+}
+.oo p{
+	font-family: 'poppins', sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: normal;
+}
+
+.oo{
+	margin: 0 15px;
+	padding: 20px;
+}
+
+.icon{
+	font-size: 60px;
+	color: black;
+	border: 1px solid black;
+	padding: 30px;
+	transition: 0.6s;
+	margin-bottom: 20px;
+}
+
+.icon:hover{
+	transform: rotateY(180deg);
+}
+
+.three{
+	max-width: 100%;
+	height: 650px;
+	background: url(../images/hover1.jpg) no-repeat center center/cover;
+}
+
+.back-hover{
+	height: 100%;
+	max-width: 100%;
+	background:rgba(0, 0, 0, 0.5);
+}
